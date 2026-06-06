@@ -1,0 +1,171 @@
+.openwa-status-cards {
+	display: flex;
+	gap: 20px;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.openwa-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	padding: 16px;
+	margin-bottom: 16px;
+}
+
+.openwa-status-cards .openwa-card {
+	flex: 1;
+	min-width: 250px;
+}
+
+.openwa-card h3 {
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #eee;
+}
+
+.openwa-status-indicator {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 8px 12px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.openwa-status-indicator.connected {
+	color: #46b450;
+	background: #edfaef;
+}
+
+.openwa-status-indicator.disconnected {
+	color: #dc3232;
+	background: #fbeaea;
+}
+
+.openwa-status-indicator .dashicons {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.openwa-session-status {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.status-ready { color: #46b450; background: #edfaef; }
+.status-qr_ready { color: #826eb4; background: #f3f0f7; }
+.status-initializing { color: #ffb900; background: #fef8e6; }
+.status-disconnected { color: #dc3232; background: #fbeaea; }
+.status-failed { color: #dc3232; background: #fbeaea; }
+.status-created { color: #007cba; background: #e5f5fa; }
+.status-error { color: #dc3232; background: #fbeaea; }
+.status-inactive { color: #72777c; background: #f1f1f1; }
+
+.openwa-session-controls {
+	margin: 16px 0;
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.openwa-session-status-box,
+.openwa-qr-box {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	padding: 20px;
+	margin: 16px 0;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.openwa-qr-box img {
+	display: block;
+	margin: 16px auto;
+	max-width: 300px;
+	height: auto;
+}
+
+.openwa-message-box {
+	padding: 12px 16px;
+	margin: 8px 0;
+	border-radius: 4px;
+}
+
+.openwa-message-box.success {
+	background: #edfaef;
+	border-left: 4px solid #46b450;
+}
+
+.openwa-message-box.error {
+	background: #fbeaea;
+	border-left: 4px solid #dc3232;
+}
+
+#openwa-test-result {
+	margin-left: 12px;
+	font-weight: 600;
+}
+
+.openwa-templates-table .openwa-template-key {
+	width: 200px;
+}
+
+.openwa-template-message {
+	font-family: monospace;
+}
+
+.openwa-insert-shortcode {
+	margin-top: 6px;
+	font-size: 11px;
+}
+
+.openwa-insert-shortcode a {
+	text-decoration: none;
+	margin-right: 4px;
+	color: #007cba;
+}
+
+.openwa-insert-shortcode a:hover {
+	color: #00a0d2;
+	text-decoration: underline;
+}
+
+.openwa-log-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.log-info { background: #e5f5fa; color: #007cba; }
+.log-warning { background: #fef8e6; color: #b8860b; }
+.log-error { background: #fbeaea; color: #dc3232; }
+
+.openwa-logs-filter {
+	display: inline-block;
+	margin: 8px 0;
+}
+
+.openwa-logs-filter select,
+.openwa-logs-filter .button {
+	vertical-align: baseline;
+}
+
+.openwa-shortcodes-ref {
+	margin-top: 30px;
+}
+
+.openwa-shortcodes-ref table {
+	margin-top: 8px;
+}
+
+.openwa-shortcodes-ref code {
+	background: #f0f0f1;
+	padding: 2px 6px;
+}
