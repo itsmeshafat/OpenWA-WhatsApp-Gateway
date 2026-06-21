@@ -68,7 +68,6 @@ OpenWA — WhatsApp Gateway for WooCommerce brings your store notifications into
 - WooCommerce 6.0+
 - PHP 7.4+
 - OpenWA Server (self-hosted) — [Installation Guide](https://youtu.be/iiKMgT5FlHw)
-- Video Tutorial (of this plugin) - [Video Tutorial](https://youtu.be/0QRfJd-k3dg)
 - WhatsApp account connected via QR code
 
 ### Optional
@@ -80,6 +79,12 @@ OpenWA — WhatsApp Gateway for WooCommerce brings your store notifications into
 ## 🎬 OpenWA Installation Guide
 
 [![OpenWA Installation Guide](https://img.youtube.com/vi/iiKMgT5FlHw/maxresdefault.jpg)](https://youtu.be/iiKMgT5FlHw)
+
+---
+
+## 🎬 Video Tutorial (of this plugin)
+
+[![Video Tutorial](https://img.youtube.com/vi/0QRfJd-k3dg/maxresdefault.jpg)](https://youtu.be/0QRfJd-k3dg)
 
 ---
 
