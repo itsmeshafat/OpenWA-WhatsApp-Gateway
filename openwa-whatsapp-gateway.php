@@ -3,7 +3,7 @@
  * Plugin Name:       OpenWA - WhatsApp Gateway for WooCommerce
  * Plugin URI:        https://github.com/itsmeshafat/OpenWA-WhatsApp-Gateway
  * Description:       Send WhatsApp notifications for WooCommerce orders, OTP verification, and more using the OpenWA self-hosted WhatsApp API gateway.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            Shafat Mahmud Khan
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'OPENWA_VERSION', '1.0.0' );
+define( 'OPENWA_VERSION', '1.0.1' );
 define( 'OPENWA_PLUGIN_FILE', __FILE__ );
 define( 'OPENWA_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'OPENWA_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -278,6 +278,23 @@ Thank you for your business!
 
 function openwa_save_default_templates() {
 	update_option( 'openwa_message_templates', openwa_get_default_templates() );
+}
+
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'openwa_plugin_action_links' );
+function openwa_plugin_action_links( $links ) {
+	$settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=openwa-settings' ) ) . '">' . esc_html__( 'Settings', 'openwa-whatsapp-gateway' ) . '</a>';
+	array_unshift( $links, $settings_link );
+	return $links;
+}
+
+add_filter( 'plugin_row_meta', 'openwa_plugin_row_meta', 10, 2 );
+function openwa_plugin_row_meta( $links, $file ) {
+	if ( plugin_basename( __FILE__ ) !== $file ) {
+		return $links;
+	}
+	$bmc_link = '<a href="https://www.buymeacoffee.com/itsmeshafat" target="_blank" style="color:#ff813f;font-weight:600;">' . esc_html__( 'Buy Me a Coffee', 'openwa-whatsapp-gateway' ) . '</a>';
+	$links[] = $bmc_link;
+	return $links;
 }
 
 register_deactivation_hook( __FILE__, 'openwa_deactivate' );

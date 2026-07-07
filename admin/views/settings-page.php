@@ -35,4 +35,15 @@
 			<?php esc_html_e( 'Customize message templates for each order status.', 'openwa-whatsapp-gateway' ); ?>
 		</li>
 	</ol>
+
+	<hr>
+
+	<div style="text-align:center;margin-top:20px;padding:20px 0;">
+		<p style="font-size:14px;color:#666;margin-bottom:10px;">
+			<?php esc_html_e( 'Enjoying OpenWA? Consider supporting development.', 'openwa-whatsapp-gateway' ); ?>
+		</p>
+		<a href="https://www.buymeacoffee.com/itsmeshafat" target="_blank">
+			<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" >
+		</a>
+	</div>
 </div>

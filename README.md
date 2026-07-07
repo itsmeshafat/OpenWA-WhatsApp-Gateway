@@ -9,12 +9,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rmyndharis/OpenWA-WhatsApp-Gateway"><img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version" /></a>
+  <a href="https://github.com/rmyndharis/OpenWA-WhatsApp-Gateway"><img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version" /></a>
   <img src="https://img.shields.io/badge/WooCommerce-6.0%2B-96588A.svg" alt="WooCommerce" />
   <img src="https://img.shields.io/badge/WordPress-5.8%2B-21759B.svg" alt="WordPress" />
   <img src="https://img.shields.io/badge/PHP-7.4%2B-777BB4.svg" alt="PHP" />
   <img src="https://img.shields.io/badge/license-GPLv2-green.svg" alt="License" />
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
+</p>
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/itsmeshafat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </p>
 
 ---
@@ -303,6 +307,10 @@ wp-openwa-gateway/
 ---
 
 ## Changelog
+
+### 1.0.1
+- Added Buy Me a Coffee button to README, plugins page, and settings page
+- Added Settings quick-link to plugin action links row
 
 ### 1.0.0
 - Initial release
